@@ -9,32 +9,59 @@
 
 <body>
     <header>
-        <h1>Art 109 Ad Archieve</h1>
-        <input type="date">
-        <input list="subjects">
-        <datalist id="subjects">
-            <option>bulbasaur</option>
-            <option>charmander</option>
-            <option>squirtle</option>
-        </datalist>
+        <h1>Art-109 Ad Archieve</h1>
+        <select id="image-selector" onchange="displayImage()">
+            <option value="">Select an image</option>
+            <option value="images/ad1-0533pm-feb3.jpg">Feb 3, 5:33pm</option>
+            <option value="image2.jpg">Feb 3, 5:34pm</option>
+            <option value="image3.jpg">Feb 3, 6:09pm</option>
+            <option value="image2.jpg">Feb 3, 6:010pm</option>
+            <option value="image3.jpg">Feb 3, 6:20pm</option>
+            <option value="image2.jpg">Feb 3, 6:20pm second ad</option>
+            <option value="image3.jpg">Feb 3, 6:32pm</option>
+            <option value="image2.jpg">Feb 3, 6:32pm second ad</option>
+            <option value="image3.jpg">Feb 3, 6:41pm</option>
+            <option value="image2.jpg">Feb 3, 6:49pm</option>
+            <option value="image3.jpg">Feb 3, 7:21pm</option>
+            <option value="image2.jpg">Feb 3, 7:22pm</option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
+            <option value="image2.jpg"></option>
+            <option value="image3.jpg"></option>
 
-        <p>This page is now cursed for 10000000 years. also also, i really don't know how to type
-        </p>
+        </select>
 
-        <p><textarea rows="5" cols="50" placeholder=""></textarea></p>
+        <br><br>
 
-        <p>
-        <figure role="img" aria-labelledby="fox-caption">
-            <pre>
-       ^   ^  	
-     =(o u o)=
-      (     )
-</pre>
-            <figcaption id="fox-caption">
-                gato
-            </figcaption>
-        </figure>
-        </p>
+        <img id="display-image" src="" alt="Selected image will appear here" width="300">
+
+
+<script>
+function displayImage() {
+    var selector = document.getElementById("image-selector");
+    var image = document.getElementById("display-image");
+    image.src = selector.value;
+}
+</script>
+
+
 
     </header>
 </body>
